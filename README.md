@@ -1,8 +1,31 @@
-# React + Vite
+# 🚀 AI Chatbot Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced AI chatbot built using **React, Tailwind CSS, Zustand, and OpenAI's Gemini API**. The chatbot supports **real-time AI responses, tooltips, chat memory, and a clean UI**. 
 
-Currently, two official plugins are available:
+🌟 **Live Demo**: [Click Here](#) *(Add your live demo link here)*  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 📌 Features
+
+✅ **AI-Powered Chat** - Uses Gemini API for intelligent responses.  
+✅ **Real-Time Messaging** - Seamless user experience with instant AI replies.  
+✅ **Chat Memory** - Stores previous messages in a session.  
+✅ **Custom Scrollbar** - Sleek and optimized UI experience.  
+✅ **Sidebar Navigation** - Easy access to options & history.  
+✅ **Tooltips & UI Enhancements** - Hover effects and interactive UI elements.  
+✅ **Mobile Responsive** - Fully optimized for desktop & mobile.  
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ **Clone the Repository**
+```sh
+git clone https://github.com/yourusername/ai-chatbot.git
+cd ai-chatbot
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+
