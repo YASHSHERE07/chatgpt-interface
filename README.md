@@ -2,7 +2,7 @@
 
 An advanced AI chatbot built using **React, Tailwind CSS, Zustand, and OpenAI's Gemini API**. The chatbot supports **real-time AI responses, tooltips, chat memory, and a clean UI**. 
 
-🌟 **Live Demo**: [Click Here](#) *(Add your live demo link here)*  
+🌟 **Live Demo**:  *https://chatgpt-interface-phi.vercel.app/*
 
 ---
 
@@ -24,8 +24,30 @@ An advanced AI chatbot built using **React, Tailwind CSS, Zustand, and OpenAI's 
 ```sh
 git clone https://github.com/yourusername/ai-chatbot.git
 cd ai-chatbot
+```
 
-### 2️⃣ Install Dependencies
+
+
+### 2️⃣ **Install Dependencies**
 ```sh
 npm install
+```
+
+### 3️⃣ Set Up Environment Variables
+Create a .env file in the root directory and add your API key:
+```sh
+
+VITE_GEMINI_API_KEY=your-api-key-here
+```
+### 4️⃣ Run the Development Server
+```sh
+
+npm run dev
+
+```
+Open http://localhost:5173 in your browser.
+
+---
+
+
 
