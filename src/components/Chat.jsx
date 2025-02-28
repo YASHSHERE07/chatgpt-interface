@@ -60,7 +60,7 @@ const Chat = () => {
   }, [memoizedMessages]);
 
   return (
-    <div className="flex h-screen w-4/5 mx-auto bg-[#212121]">
+    <div className="flex   h-screen w-4/5 mx-auto bg-[#212121]">
       <div className="flex flex-col pt-16 md:pt-20 flex-1 max-w-3xl mx-auto text-white relative">
         {/* ✅ Help Text in the Center (Only When No Messages) */}
         {showHelpText && (
