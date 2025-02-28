@@ -1,10 +1,9 @@
 import { Menu, Plus, Search, Trash2, MessageCircle } from "lucide-react";
 import PropTypes from "prop-types";
-import useChatStore from "../store/chatStore"; // ✅ Zustand store for chat management
+import useChatStore from "../store/chatStore"; 
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
-  const { chats, activeChat, setActiveChat, createNewChat, deleteAllChats } = useChatStore(); // ✅ Zustand store functions
-
+  const { chats, activeChat, setActiveChat, createNewChat, deleteAllChats } = useChatStore(); 
   return (
     <div className="h-screen bg-[#171717] text-white px-4 pt-2 flex flex-col transition-transform duration-300">
       {/* Menu Button - Always Visible When Sidebar is Closed */}
@@ -17,10 +16,8 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </button>
       )}
 
-      {/* Sidebar Content (Only Visible When Open) */}
       {isSidebarOpen && (
         <>
-          {/* Sidebar Header - Menu, Search, New Chat */}
           <div className="flex justify-between">
             <button
               className="mb-4 p-2 rounded-lg hover:bg-[#303030]"
@@ -41,7 +38,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             </div>
           </div>
 
-          {/* Chat Sessions List */}
           <div className="flex-1 overflow-y-auto">
             {Object.keys(chats).length > 0 ? (
               Object.keys(chats).map((chatId) => (
@@ -61,7 +57,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             )}
           </div>
 
-          {/* ✅ "Clear All Chats" Button */}
           <button
             className="mt-4 p-2 flex items-center justify-center bg-red-500 rounded hover:bg-red-700"
             onClick={() => {
@@ -78,7 +73,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   );
 };
 
-// ✅ Add PropTypes validation
+//  PropTypes validation
 Sidebar.propTypes = {
   isSidebarOpen: PropTypes.bool.isRequired,
   setIsSidebarOpen: PropTypes.func.isRequired,

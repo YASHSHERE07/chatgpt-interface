@@ -19,7 +19,6 @@ const Icons = () => {
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [isUserOpen, setIsUserOpen] = useState(false);
 
-  // ✅ Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -60,7 +59,6 @@ const Icons = () => {
             <CircleUser size={44} fill="#ececec" />
           </button>
 
-          {/* User Dropdown */}
           {isUserOpen && (
             <div className="absolute top-14 right-5 bg-[#2f2f2f] text-neutral-200 text-sm rounded-2xl shadow-2xl w-64 p-2 z-50">
               <ul className="space-y-2">
@@ -130,7 +128,6 @@ const Icons = () => {
           )}
         </div>
 
-        {/* ✅ User Icon */}
       </div>
     </div>
   );

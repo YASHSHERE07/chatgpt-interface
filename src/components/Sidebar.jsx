@@ -73,7 +73,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             </div>
           </div>
 
-          {/* ✅ Dynamic Chatbot List (Mapped) */}
           <div className="flex-1 mt-3 overflow-y-auto custom-scrollbar ml-1">
             {chatBots.map((bot, index) => (
               <div key={index} className="flex items-center pb-3 space-x-2">
@@ -89,7 +88,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
               <Dice4 size={22} />{" "}
               <h1 className="text-[14px] text-neutral-200">Explore Gpts</h1>
             </div>
-            {/* ✅ Dynamic User Chats from Zustand */}
             {Object.keys(chats).length > 0 ? (
               Object.keys(chats).map((chatId) => (
                 <div
@@ -110,7 +108,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             )}
           </div>
 
-          {/* ✅ "Clear All Chats" Button */}
 
           <div className="tooltip-container">
             <button
@@ -133,7 +130,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   );
 };
 
-// ✅ Add PropTypes validation
 Sidebar.propTypes = {
   isSidebarOpen: PropTypes.bool.isRequired,
   setIsSidebarOpen: PropTypes.func.isRequired,

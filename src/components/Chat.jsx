@@ -62,7 +62,6 @@ const Chat = () => {
   return (
     <div className="flex   h-screen w-4/5 mx-auto bg-[#212121]">
       <div className="flex flex-col pt-16 md:pt-20 flex-1 max-w-3xl mx-auto text-white relative">
-        {/* ✅ Help Text in the Center (Only When No Messages) */}
         {showHelpText && (
           <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-[30px] font-semibold ">
             <p>What can I help with?</p>
@@ -83,11 +82,9 @@ const Chat = () => {
             </div>
           ))}
 
-          {/* ✅ Typing Animation */}
           {isTyping && <div className="text-gray-400">Typing...</div>}
         </div>
 
-        {/* Show API error messages separately */}
         {error && (
           <div className="p-3 bg-red-500 text-white text-center">
             {error}{" "}
@@ -97,7 +94,6 @@ const Chat = () => {
           </div>
         )}
 
-        {/* Input and Buttons Section */}
         <div className="p-3 flex items-center rounded-t-3xl bg-[#303030]">
           <input
             type="text"
@@ -109,9 +105,7 @@ const Chat = () => {
           />
         </div>
 
-        {/* Action Buttons Section */}
         <div className="flex justify-between space-x-3 rounded-b-3xl px-3 py-2 mb-2 bg-[#303030]">
-          {/* Left-side Buttons */}
           <div className="flex space-x-2">
             <div className="tooltip-container">
               <button className="rounded-full border p-2 w-8 h-8 flex items-center justify-center text-neutral-400 border-neutral-400">
@@ -137,7 +131,6 @@ const Chat = () => {
             </div>
           </div>
 
-          {/* Right-side Buttons */}
           <div className="flex space-x-2">
             <div className="tooltip-container">
               <button
