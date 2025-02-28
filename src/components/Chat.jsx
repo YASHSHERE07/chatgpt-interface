@@ -61,7 +61,7 @@ const Chat = () => {
 
   return (
     <div className="flex h-screen w-4/5 mx-auto bg-[#212121]">
-      <div className="flex flex-col flex-1 max-w-3xl mx-auto text-white relative">
+      <div className="flex flex-col pt-16 md:pt-20 flex-1 max-w-3xl mx-auto text-white relative">
         {/* ✅ Help Text in the Center (Only When No Messages) */}
         {showHelpText && (
           <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-[30px] font-semibold ">
@@ -69,7 +69,7 @@ const Chat = () => {
           </div>
         )}
 
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 p-4">
           {memoizedMessages.map((msg, index) => (
             <div
               key={index}
